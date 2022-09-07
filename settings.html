@@ -5,18 +5,20 @@
     <title></title>
   </head>
   <body>
-    <h1>thank you</h1>
-    <a href="index.html">
-      <button>Home</button>
-    </a>
-    <br>
-    <br>
-    <a href="https://github.com/shanegibney/link-two-pages">
-      <button>Back to repository</button>
-    </a>
-
+<form>
+  <fieldset>
+<legend>Number:</legend>
+<input id="userinput1" name="input1" type="number" max="10" min="0"value="5"></br>
+</fieldset>
+<button type="button" class="btn-submit">Submit</button>
+</form>
+<script>
+let btn = document.querySelector(".btn-submit")
+let userInput1 = document.querySelector("#userinput1")
+    btn.addEventListener("click",function(){
+    localStorage.setItem("userinput1",userinput1.value);
+    location.href = "index.html";
+  });
+</script>
   </body>
-  <script>
-  console.log(localStorage);
-  </script>
 </html>

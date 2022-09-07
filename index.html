@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     <title>Links</title>
   </head>
-  <body>
+  <body onload="draw();">
     <a href="settings.html">
       <button>click here</button>
     </a><br>
     <a href="https://github.com/shanegibney/link-two-pages">
       <button>Back to repository</button>
+  <script type="text/javascript">
+  function draw() {
+    let userInput1 = localStorage.getItem("userinput1");
+    console.log("number :" + userInput1);
+  }
 
-    </a>
-  </body>
+  </script>
 </html>
