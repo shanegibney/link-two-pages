@@ -12,6 +12,8 @@
 <input id="userinput1" name="input1" type="number" max="10" min="0"value="5"></br>
 <label>Colour<label>
 <input id="userinput2" name="input2" type="color" value="#3e86fa"></br>
+<label>Colour<label>
+<input id="userinput3" name="input3" type="color" value="#3e86fa"></br>
 </fieldset>
 <button type="button" class="btn-submit">Submit</button>
 </form>
@@ -19,9 +21,12 @@
 let btn = document.querySelector(".btn-submit")
 let userInput1 = document.querySelector("#userinput1")
 let userInput2 = document.querySelector("#userinput2")
+let userInput3 = document.querySelector("#userinput3")
+
     btn.addEventListener("click",function(){
     localStorage.setItem("userinput1",userinput1.value);
     localStorage.setItem("userinput2",userinput2.value);
+    localStorage.setItem("userinput3",userinput3.value);
     location.href = "index.html";
   });
 </script>
