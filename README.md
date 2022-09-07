@@ -1,4 +1,7 @@
 This code is to link two html pages
+
+In settings.html there are two forms, the input from which goes into localStorage and is retrieved in index.html and is logged to the console.
+
 <br>
 [gh-pages](http://shanegibney.github.io/link-two-pages/)
 
